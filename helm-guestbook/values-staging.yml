@@ -1,0 +1,11 @@
+service:
+  type: LoadBalancer
+  port: 8002
+resources: 
+  #for staging we limit the resource to half of production
+  limits:
+    cpu: 2 #two core limits for the cpu 
+    memory: 4Gi #four GB for RAM
+  requests:
+    cpu: 2 #two core limits for the cpu 
+    memory: 4Gi #four GB for RAM
