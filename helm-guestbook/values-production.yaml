@@ -1,3 +1,11 @@
 service:
   type: LoadBalancer
   port: 8001
+resources: 
+  #for production we set 4 core and 8GB RAM limit 
+  limits:
+    cpu: 4 
+    memory: 8Gi 
+  requests:
+    cpu: 4 
+    memory: 8Gi 
